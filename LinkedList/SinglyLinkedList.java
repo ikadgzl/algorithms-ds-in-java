@@ -120,7 +120,7 @@ public class SinglyLinkedList {
 
   }
 
-  public boolean search(Node head, int key) {
+  public boolean search(int key) {
     Node current = head;
 
     while (current != null) {
