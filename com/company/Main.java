@@ -1,31 +1,32 @@
 package com.company;
 
 
-import LinkedList.CircularSinglyLinkedList;
+import LinkedList.DoublyLinkedList;
 
 public class Main {
 
   public static void main(String[] args) {
-    CircularSinglyLinkedList circularSinglyLinkedList = new CircularSinglyLinkedList();
+    DoublyLinkedList dll = new DoublyLinkedList();
 
-    circularSinglyLinkedList.push(3);
-    circularSinglyLinkedList.push(5);
-    circularSinglyLinkedList.push(2);
-    circularSinglyLinkedList.push(7);
-    circularSinglyLinkedList.push(6);
-    circularSinglyLinkedList.push(9);
-    circularSinglyLinkedList.push(8);
-    circularSinglyLinkedList.push(4);
+    dll.push(1);
+    dll.push(2);
+    dll.push(3);
+    dll.push(4);
+    dll.push(5);
 
+    dll.append(44);
+    dll.push(84);
 
+    dll.insertAfter(dll.head.next.next, 123);
 
-    System.out.println("\n//TRAVERSING//");
-    circularSinglyLinkedList.traverse();
+    dll.traverse();
 
+    System.out.println();
+    System.out.println();
 
-    System.out.println("\n//SORTED TRAVERSING//");
-    circularSinglyLinkedList.sortCircularLinkedList();
-    circularSinglyLinkedList.traverse();
+    dll.sortLinkedList();
+
+    dll.traverse();
 
 
   }
