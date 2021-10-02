@@ -109,15 +109,17 @@ public class DoublyLinkedList {
       temp = temp.next;
     }
 
+    if (temp == null) {
+      System.out.println("Node with the provided key not found in the list!");
+      return;
+    }
+
     temp.prev.next = temp.next;
     temp.next.prev = temp.prev;
 
     temp.next = null;
     temp.prev = null;
 
-    if (temp == null) {
-      System.out.println("Node with the provided key not found in the list!");
-    }
   }
 
   public void deleteNodeAt(int position) {
