@@ -1,4 +1,4 @@
-package Stack;
+package Stack.StackQuestions;
 
 public class StackQuestions {
   // Three in One, implement single array for three separate stacks
